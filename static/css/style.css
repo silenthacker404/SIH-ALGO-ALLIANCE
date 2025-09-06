@@ -1,0 +1,113 @@
+/* General */
+body {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background: linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Chat Widget */
+.chat-widget {
+  width: 400px;
+  height: 600px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* Header */
+.chat-header {
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chat-header h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.chat-header select {
+  padding: 5px;
+  border-radius: 8px;
+  border: none;
+}
+
+/* Chatbox */
+.chatbox {
+  flex: 1;
+  padding: 15px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Message bubbles */
+.message {
+  max-width: 75%;
+  padding: 10px 14px;
+  border-radius: 18px;
+  line-height: 1.4;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.user-msg {
+  align-self: flex-end;
+  background: #0078ff;
+  color: white;
+  border-bottom-right-radius: 4px;
+}
+
+.bot-msg {
+  align-self: flex-start;
+  background: #e6e6e6;
+  color: black;
+  border-bottom-left-radius: 4px;
+}
+
+/* Input area */
+.chat-input {
+  display: flex;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+}
+
+.chat-input button {
+  margin-left: 10px;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 12px;
+  background: #0078ff;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.chat-input button:hover {
+  background: #005fcc;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}

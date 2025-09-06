@@ -1,0 +1,8 @@
+{
+  "intents": [
+    {"tag": "greeting", "patterns": ["hello", "hi", "hey"], "responses": ["Hello! I'm SwasthyaSaathi. How can I help you today?"]},
+    {"tag": "dengue_symptoms", "patterns": ["what are dengue symptoms", "dengue signs"], "responses": ["Common dengue symptoms include high fever, headache, joint pain, rash, and nausea."]},
+    {"tag": "malaria_cure", "patterns": ["can neem leaves cure malaria", "malaria cure"], "responses": ["No, neem leaves cannot cure malaria. Please consult a doctor for proper treatment."]},
+    {"tag": "goodbye", "patterns": ["bye", "goodbye", "see you"], "responses": ["Take care! Stay safe and healthy."]}
+  ]
+}
